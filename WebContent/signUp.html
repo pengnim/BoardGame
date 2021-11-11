@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css" name='viewport' content="width=device-width,initial-scale=1.0">
+body{
+background-color:white;
+height:100%;
+
+}
+#inputForm {
+	text-align: center;
+	margin-top:50px;
+	color:white;
+	width:inherit;
+	height:500px;
+	text-shadow:0 0 5px #000000;
+	background-image:url('memory.png');
+	background-repeat:no-repeat;
+	background-position:top;
+	background-size:auto;
+}
+
+#line {
+	width: inherit;
+	background-color: black;
+	height: 5px;
+}
+#head,#error{
+font-size:40pt;
+font-weight:bold;
+}
+@media screen and (max-width: 990px) {
+body {
+  padding-top:50px;
+   
+  }
+ #inputForm {
+  padding-top:50px;
+  }
+  input{
+  font-size:40pt;
+  border:solid black 2px;
+  }
+ #footer{
+ position:relative;
+ width:auto;
+ height:auto;
+  font-size:30pt;
+  bottom:0;
+  right:0;
+  left:0;
+ width:inherit;
+padding-top:10px;
+padding-bottom:10px;
+margin-top:10%;
+ }
+ #id, #pw,#pwck{
+	font-size:46pt;
+	font-weight:bold;
+}
+#head{
+font-size:54pt;
+}
+ .btn{
+ 	padding-top:10px;
+ 	padding-bottom:10px;
+ 	font-size:30pt;
+ 	border:none;
+ 	width:50%;
+ 	height:auto;
+ 	}
+}
+</style>
+<title>Sign Up</title>
+</head>
+<body>
+	<header>
+		<p align="center" id="head">Fill out the form to Sign up</p>
+	</header>
+	<div id="line"></div>
+	<div id="inputForm">
+		<form method="post" action="SignUp">
+			<div id="id">ID</div>
+			<input name="id" type="text">
+			<div id="pw">PW</div>
+			<input name="pw" type="password"> <br>
+			<div id="pwck">PW Check</div>
+			<input name="pwCk" type="password"> <br>
+			<br> <input class="btn" type="submit" value="Register">
+		</form>
+	</div>
+
+</body>
+</html>

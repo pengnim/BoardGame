@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name='viewport' content="width=device-width,initial-scale=1.0">
+<style type="text/css">
+body {
+	background-image:url("logic.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size:contain;
+	text-align:center;
+}
+.btn{font-size:16pt; margin:10px;}
+#header, #id, #pw{
+	padding:10px;
+	color: white;
+	text-shadow: 0 0 5px #000000;	
+	font-weight:bold;
+}
+#id, #pw{
+font-size:20pt;
+}
+#header{
+font-size:40pt;
+}
+#footer{
+background-color:#bdbdbd;
+ position:absolute;
+ bottom:0px;
+ left:0px;
+ color:white;
+ width:100%;
+ margin:0px; 
+ font-size:1.2em;
+}
+
+@media screen and (max-width: 990px) {
+  body {
+  padding-top:50px;
+    background-size:80%;
+  }
+
+  input{
+  font-size:1.5em;
+  border:solid black 2px;
+  text-align:center;
+  }
+ #footer{
+ position:relative;
+ width:auto;
+ height:auto;
+  font-size:1.2em;
+  bottom:0;
+  right:0;
+  left:0;
+ width:inherit;
+padding-top:10px;
+padding-bottom:10px;
+margin-top:10%;
+ }
+ #id, #pw{
+	font-size:2.0em;
+	font-weight:bold;
+}
+#header{
+font-size:3.0em;
+}
+ .btn{
+ 	padding-top:10px;
+ 	padding-bottom:10px;
+ 	font-size:1.5em;
+ 	border:none;
+ 	width:100%;
+ 	height:auto;
+ 	}
+}
+</style>
+<title>Log in</title>
+</head>
+<body>
+	<h1 id="header" align="center">Log in</h1>
+	<br>
+	<form method="POST" action="LogInAction">
+		<p>
+		<div id="id">ID</div>
+		<input name="identification" type="text"> <br>
+		<div id="pw">Password</div>
+		<input name="pw" type="password">
+		</p>
+		<input class="btn" type="submit" value="Log in">
+	</form>
+	<input class='btn' type="button" value="Sign up" onclick="location.href='signUp.html'">
+	<div id="footer" >
+	<p>developed by: Yeji An & Seowoo Lee& Sohee Hyoun </p>
+	<p>e-mail: ann4913@naver.com & twsara@naver.com & hyounso2@naver.com</p>
+	</div>
+</body>
+</html>
