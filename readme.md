@@ -14,8 +14,6 @@
     <ul>
       <li>비싼 가격의 보드게임을 사지않고 온라인으로 즐기기 위함</li>
     </ul>
-    <br>
-    <hr>
     <h1>흐름도</h1>
     <img src="https://user-images.githubusercontent.com/90567066/147452995-b2b8e201-5849-4df2-a0be-192bbcc15acf.png">
     <h1>시연 영상</h1>
